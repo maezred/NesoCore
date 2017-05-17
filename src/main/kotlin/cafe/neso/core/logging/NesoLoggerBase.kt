@@ -1,4 +1,4 @@
-package cafe.neso.util.core.logging
+package cafe.neso.core.logging
 
 /**
  * Created by moltendorf on 2017-05-09.

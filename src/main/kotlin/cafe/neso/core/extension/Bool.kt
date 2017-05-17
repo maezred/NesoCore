@@ -1,4 +1,4 @@
-package cafe.neso.util.core.extension
+package cafe.neso.core.extension
 
 /**
  * Created by moltendorf on 2017-05-09.

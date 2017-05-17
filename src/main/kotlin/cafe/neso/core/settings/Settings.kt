@@ -1,4 +1,4 @@
-package cafe.neso.util.core.settings
+package cafe.neso.core.settings
 
 /**
  * Created by moltendorf on 2017-05-15.

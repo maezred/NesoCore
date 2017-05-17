@@ -1,4 +1,4 @@
-package cafe.neso.util.core.settings
+package cafe.neso.core.settings
 
 import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty
@@ -16,11 +16,5 @@ class prop<in R: SettingsInterface, T>(val default: T): ReadWriteProperty<R, T?>
 
   override operator fun setValue(thisRef: R, property: KProperty<*>, value: T?) {
     this.value = value ?: default
-  }
-
-  companion object {
-    init {
-      println("Hi!")
-    }
   }
 }

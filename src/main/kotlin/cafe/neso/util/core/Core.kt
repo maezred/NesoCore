@@ -1,19 +1,19 @@
 package cafe.neso.util.core
 
-import java.util.logging.*
+import cafe.neso.core.logging.NesoLogger
 
 /**
  * Created by moltendorf on 2017-05-09.
  */
 
 interface Core {
-  val logger: Logger
+  val logger: NesoLogger
 
   companion object {
-    lateinit var instance: Core
+    lateinit var neso: Core
 
     operator fun invoke(builder: () -> Core) {
-      instance = builder()
+      neso = builder()
     }
   }
 }

@@ -1,6 +1,6 @@
-package cafe.neso.util.core.logging
+package cafe.neso.core.logging
 
-import cafe.neso.util.core.extension.Bool
+import cafe.neso.core.extension.Bool
 
 /**
  * Created by moltendorf on 2017-05-09.
@@ -19,10 +19,4 @@ interface NesoLogger {
   fun trace(thrown: Throwable, vararg any: Any?)
 
   fun test(vararg any: Any?)
-
-  companion object {
-    val nullLogger = object: NesoLoggerBase() {
-      override fun log(label: String, vararg any: Any?) {}
-    }
-  }
 }
