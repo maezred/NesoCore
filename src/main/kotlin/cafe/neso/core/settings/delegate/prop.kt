@@ -1,10 +1,14 @@
-package cafe.neso.core.settings
+package cafe.neso.core.settings.delegate
 
+import cafe.neso.core.settings.SettingsInterface
 import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty
 
 /**
- * Created by moltendorf on 2017-05-15.
+ * Created by moltendorf on 2017-05-16.
+ */
+/**
+ * Created by moltendorf on 2017-05-16.
  */
 
 class prop<in R: SettingsInterface, T>(val default: T): ReadWriteProperty<R, T?> {

@@ -1,4 +1,4 @@
-package cafe.neso.util.core
+package cafe.neso.core
 
 import cafe.neso.core.logging.NesoLogger
 
@@ -6,14 +6,10 @@ import cafe.neso.core.logging.NesoLogger
  * Created by moltendorf on 2017-05-09.
  */
 
-interface Core {
+interface Neso {
   val logger: NesoLogger
 
   companion object {
-    lateinit var neso: Core
-
-    operator fun invoke(builder: () -> Core) {
-      neso = builder()
-    }
+    lateinit var neso: Neso
   }
 }
